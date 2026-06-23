@@ -1,0 +1,8 @@
+#!/bin/bash
+# Backup hook: remove Cursor attribution if it still appears in the final message.
+MSG_FILE="$1"
+if [ -f "$MSG_FILE" ]; then
+  sed -i '' '/[Cc]o-authored-by:.*[Cc]ursor/d' "$MSG_FILE"
+  sed -i '' '/cursoragent@cursor\.com/d' "$MSG_FILE"
+  sed -i '' '/Made-with: Cursor/d' "$MSG_FILE"
+fi

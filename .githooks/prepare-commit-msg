@@ -1,0 +1,8 @@
+#!/bin/bash
+# Strips Cursor co-author lines so commits show only the real author on GitHub.
+MSG_FILE="$1"
+if [ -f "$MSG_FILE" ]; then
+  sed -i '' '/[Cc]o-authored-by:.*[Cc]ursor/d' "$MSG_FILE"
+  sed -i '' '/cursoragent@cursor\.com/d' "$MSG_FILE"
+  sed -i '' '/Made-with: Cursor/d' "$MSG_FILE"
+fi

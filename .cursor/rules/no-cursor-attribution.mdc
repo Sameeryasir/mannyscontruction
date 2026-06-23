@@ -1,0 +1,10 @@
+---
+description: Prevent Cursor from adding co-author or attribution to git commits
+alwaysApply: true
+---
+
+Never add "Co-authored-by: Cursor", "Made-with: Cursor", or any Cursor attribution trailer to git commits, pull requests, or code comments.
+
+When committing for this project, use only the author:
+- Name: sameer
+- Email: sameeryasir02@gmail.com
