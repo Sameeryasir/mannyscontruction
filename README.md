@@ -4,8 +4,9 @@ Premium one-page website for Manny's Construction LLC, serving Liberal, KS and s
 
 ## Quick Start
 
+From the project root:
+
 ```bash
-cd frontend
 npm install
 npm run dev
 ```
@@ -15,10 +16,13 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 ## Build for Production
 
 ```bash
-cd frontend
 npm run build
 npm run preview
 ```
+
+## Deploy (Vercel / Netlify)
+
+Connect the GitHub repo and use the **project root** as the base directory. Build settings are included in `vercel.json` and `netlify.toml`.
 
 ## Tech Stack
 
